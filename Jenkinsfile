@@ -1,5 +1,5 @@
 pipeline{
-    aagent{
+    agent{
         lable "jenkins-gent"
     }
     stages{
