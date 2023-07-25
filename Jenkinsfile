@@ -1,11 +1,11 @@
 pipeline{
     agent{
-        lable "jenkins-agent"
+        label "jenkins-agent"
     }
     stages{
         stage("Checkout from SCM"){
             steps{
-                git branch: 'main', credentialsID: 'github', url: 'https://github.com/sagar-amd/complete-prodcution-e2e-pipeline'
+                git branch: 'main', credentialsId: 'github', url: 'https://github.com/sagar-amd/complete-prodcution-e2e-pipeline'
             }
         }
         stage("Build Application"){
