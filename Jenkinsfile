@@ -1,6 +1,6 @@
 pipeline{
     agent{
-        lable "jenkins-gent"
+        lable "jenkins-agent"
     }
     stages{
         stage("Checkout from SCM"){
