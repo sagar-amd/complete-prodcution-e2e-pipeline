@@ -22,5 +22,10 @@ pipeline{
                 sh "mvn test"
             }
         }
+                stage("Testing webhook"){
+            steps{
+                sh "echo 'Webhook is working perfctly !!!'"
+            }
+        }
     }
 }
