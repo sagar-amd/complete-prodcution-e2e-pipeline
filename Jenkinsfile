@@ -22,9 +22,11 @@ pipeline{
                 sh "mvn test"
             }
         }
-                stage("Testing webhook"){
+        stage("Code analysis"){
             steps{
-                sh "echo 'Webhook is working perfctly !!!'"
+                withSonarQubeEnv(CredentialsID: 'jenkins-sonarQube-token'){
+                    sh "mvn sonar:sonar"
+                }
             }
         }
     }
