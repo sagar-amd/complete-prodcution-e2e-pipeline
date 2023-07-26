@@ -4,7 +4,7 @@ pipeline{
     }
     tools {
         jdk 'Java17'
-        maven 'Maven3'
+        maven 'Maven3.9.3'
     }
     stages{
         stage("Checkout from SCM"){
